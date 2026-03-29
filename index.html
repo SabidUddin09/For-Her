@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔐 LOCK SCREEN -->
+<div id="lockScreen">
+    <div class="lock-box">
+        <h2>Enter Password</h2>
+        <input type="password" id="passwordInput" placeholder="Password">
+        <button onclick="checkPassword()">Enter</button>
+        <p id="errorMsg"></p>
+    </div>
+</div>
+
+<!-- 🌐 MAIN CONTENT -->
+<div id="mainContent">
+
+    <div class="container">
+        <h1 class="hidden">For You</h1>
+
+        <!-- 🖼️ GALLERY -->
+        <div class="gallery">
+
+            <div class="photo hidden zoom poem-trigger" data-poem="1">
+                <img src="images/her1.jpg">
+            </div>
+
+            <div class="photo hidden zoom poem-trigger" data-poem="2">
+                <img src="images/her2.jpg">
+            </div>
+
+            <div class="photo hidden zoom poem-trigger" data-poem="3">
+                <img src="images/her3.jpg">
+            </div>
+
+            <div class="photo hidden zoom poem-trigger" data-poem="4">
+                <img src="images/her4.jpg">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- 📝 MODAL -->
+<div id="poemModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-poem" id="modalText"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
